@@ -30,4 +30,9 @@ script:
 - npm run e2e
 
 after_success:
-- npm deploy
+if ([ "$TRAVIS_BRANCH" == "master" ] || [ ! -z "$TRAVIS_TAG" ]) && 
+      [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
+    npm deploy
+else
+    echo "Deploy skipped!"
+fi
