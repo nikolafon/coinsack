@@ -1,0 +1,12 @@
+@import "~@angular/material/prebuilt-themes/pink-bluegrey.css";
+html, body, app-root, md-sidenav-container {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+md-sidenav {
+  width: 120px;
+}
+body {
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+}
