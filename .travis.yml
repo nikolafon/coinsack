@@ -32,7 +32,7 @@ script:
 after_success:
 - if ([ "$TRAVIS_BRANCH" == "master" ] || [ ! -z "$TRAVIS_TAG" ]) && 
       [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
-    npm deploy
+    npm deploy;
   else
-    echo "Deploy skipped!"
+    echo "Deploy skipped!";
   fi
