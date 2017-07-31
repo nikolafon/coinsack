@@ -30,10 +30,9 @@ script:
 - npm run e2e
 
 deploy:
+  skip_cleanup: true
   provider: firebase
-  on:
-    branch: master
   token:
     secure: "$FIREBASE_TOKEN"
-  message: "Deploying to Firebase"
-  skip_cleanup: true
+  on:
+    branch: master
