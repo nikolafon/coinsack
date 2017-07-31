@@ -28,6 +28,9 @@ script:
 - npm test
 - npm run e2e
 
+before_deploy:
+- npm run build
+
 deploy:
   skip_cleanup: true
   provider: firebase
