@@ -6,7 +6,6 @@ node_js:
 cache:
   directories:
     - "node_modules"
-    - "dist"
 addons:
 apt:
   sources:
