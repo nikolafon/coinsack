@@ -1,6 +1,6 @@
 # COINSACK
 
-[![Build Status](https://travis-ci.org/nikolafon/coinsack.svg?branch=development)](https://travis-ci.org/nikolafon/coinsack)
+[![Build Status](https://travis-ci.org/nikolafon/coinsack.svg?branch=master)](https://travis-ci.org/nikolafon/coinsack)
 
 Coinsack is an easy to use multi-cryptocurreny wallet.
 
