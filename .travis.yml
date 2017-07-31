@@ -30,11 +30,10 @@ script:
 - npm run e2e
 
 deploy:
+  provider: firebase
+  on:
+    branch: master
+  token:
+    secure: "$FIREBASE_TOKEN"
+  message: "Deploying to Firebase"
   skip_cleanup: true
-  run: 
-  - if ([ "$TRAVIS_BRANCH" == "master" ] || [ ! -z "$TRAVIS_TAG" ]) && 
-          [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
-      npm run deploy;
-    else
-      echo "Deploy skipped!";
-    fi
