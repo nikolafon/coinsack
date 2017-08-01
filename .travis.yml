@@ -27,7 +27,6 @@ script:
 - npm run build
 - npm run test:cov
 - npm run e2e
-- cp ./coverage/lcov.info ./coverage/coverage.lcov
 
 before_deploy:
 - npm run build
