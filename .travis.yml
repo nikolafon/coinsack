@@ -21,12 +21,14 @@ before_install:
 
 before_script:
 - npm install
+- npm install -g coveralls
 
 script:
 - npm run lint 
 - npm run build
-- npm run test:cov
+- npm run test:coverage
 - npm run e2e
+- cat ./coverage/lcov.info | coveralls
 
 before_deploy:
 - npm run build
