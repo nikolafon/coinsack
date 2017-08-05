@@ -4,6 +4,13 @@
   },
   "hosting": {
     "public": "dist",
+    "redirects": [
+      {
+        "source": "blockchain.info",
+        "destination": "https://blockchain.info",
+        "type": 302
+      }
+    ],
     "rewrites": [
       {
         "source": "**",
