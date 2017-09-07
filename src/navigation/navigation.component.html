@@ -1,0 +1,32 @@
+<div class="navigation-header">
+  <img title="COINSACK" src="../assets/money-full.svg" />
+  <span>COINSACK</span>
+</div>
+<div class="navigation-top">
+  <a href="/portfolio" title="Portfolio" [ngClass]="selectedItem=='portfolio'? 'navigation-item selected' : 'navigation-item'">
+    <img src="../assets/portfolio.svg" />
+    <span>Portfolio</span>
+  </a>
+  <a href="/wallet" title="Wallet" [ngClass]="selectedItem=='wallet'? 'navigation-item selected' : 'navigation-item'">
+    <img src="../assets/wallet.svg" />
+    <span>Wallet</span>
+  </a>
+  <a href="/exchange" title="Exchange" [ngClass]="selectedItem=='exchange'? 'navigation-item selected' : 'navigation-item'">
+    <img src="../assets/exchange.svg" />
+    <span>Exchange</span>
+  </a>
+  <a href="/backup" title="Backup" [ngClass]="selectedItem=='backup'? 'navigation-item selected' : 'navigation-item'">
+    <img src="../assets/backup.svg" />
+    <span>Backup</span>
+  </a>
+</div>
+<div class="navigation-bottom">
+  <a href="/settings" title="Settings" [ngClass]="selectedItem=='settings'? 'navigation-item selected' : 'navigation-item'">
+    <img src="../assets/settings.svg" />
+    <span>Settings</span>
+  </a>
+  <a href="/help" title="Help" [ngClass]="selectedItem=='help'? 'navigation-item selected' : 'navigation-item'">
+    <img src="../assets/help.svg" />
+    <span>Help</span>
+  </a>
+</div>
