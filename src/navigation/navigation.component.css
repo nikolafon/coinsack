@@ -1,0 +1,117 @@
+
+@media only screen and (min-width: 768px) {
+  :host {
+  display: flex;
+  flex-flow: column;
+  background-color: #7F6E5D;
+  color: white;
+  width: 200px;
+  height: 100vh;
+  min-height: min-content;
+  transition-duration: .3s;
+  transition-property: width;
+  transition-timing-function: ease-out;
+  align-self: flex-start;
+ }
+.navigation-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 60px;
+  min-height: 60px;
+  padding-left: 30px;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+.navigation-header span {
+  align-self: center;
+  padding-top: 10px;
+}
+.navigation-header img {
+  width:50px;
+  height: 50px;
+  align-self: center;
+}
+}
+@media only screen and (max-width: 768px) {
+  :host {
+  display: flex;
+  flex-flow: column;
+  background-color: #7F6E5D;
+  color: white;
+  width: 70px;
+  height: 100vh;
+  min-height: min-content;
+  transition-duration: .3s;
+  transition-property: width;
+  transition-timing-function: ease-out;
+  align-self: flex-end;
+ }
+.navigation-header span {
+  display: none;
+ }
+.navigation-item span {
+  display: none;
+ }
+.navigation-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 60px;
+  min-height: 60px;
+  cursor: pointer;
+}
+.navigation-header img {
+  width:40px;
+  height: 40px;
+  align-self: center;
+}
+}
+.navigation-header {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+}
+.navigation-top {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  padding-top: 10px;
+}
+.navigation-bottom {
+  display: flex;
+  flex-flow: column;
+  flex-grow: 1;
+  justify-content: flex-end
+}
+.navigation-item.selected {
+ background-color:  #5E4F40
+}
+.navigation-item.bottom {
+ align-self: flex-end;
+}
+.navigation-item:hover:not(.selected) {
+  transform: scale(1.1);
+  transition-duration: .2s;
+  transition-timing-function: ease-out;
+}
+
+.navigation-item:active:not(.selected) {
+  transform: scale(0.95);
+  transition-duration: .1s;
+  transition-timing-function: ease-out;
+}
+
+.navigation-item span {
+  align-self: center;
+  padding-left: 20px;
+}
+.navigation-item img {
+  align-self: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}

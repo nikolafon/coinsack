@@ -1,0 +1,14 @@
+:host {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+}
+.content {
+  display: flex;
+  color: white;
+  background-color: #5E4F40;
+  width: 100vw;
+  height: 100vh;
+}
