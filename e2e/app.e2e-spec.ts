@@ -9,6 +9,6 @@ describe('coinsack App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('COINSACK');
+    expect(page.getParagraphText()).toContain('COINSACK');
   });
 });

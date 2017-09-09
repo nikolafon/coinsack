@@ -6,6 +6,6 @@ export class CoinsackPage {
   }
 
   getParagraphText() {
-    return element(by.css('app-root')).getText();
+    return element(by.css('coinsack-app')).getText();
   }
 }
